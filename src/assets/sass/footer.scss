@@ -1,0 +1,49 @@
+/*Стили для футера*/
+.footer {
+
+  .footer__top {
+    margin-bottom: 74px;
+
+    img {
+      @media screen and (max-width: $lg) {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .row {
+      @media screen and (max-width: $lg) {
+        row-gap: 24px;
+        text-align: center;
+      }
+    }
+
+    .footer__links {
+      text-align: center;
+
+      .footer__links-item-link {
+        font-size: 24px;
+        color: var(--dark);
+      }
+    }
+
+    .footer__links-item {
+
+    }
+
+    .footer__info {
+      text-align: right;
+      @media screen and (max-width: $lg) {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer__copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
+/*Конец стилей для футера*/

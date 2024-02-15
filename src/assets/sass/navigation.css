@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*Стили для навигации*/
+.navigation {
+  padding-top: 38px;
+  margin-bottom: 72px; }
+  .navigation .navigation__wrap {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: $sm) {
+      .navigation .navigation__wrap .navigation__logo {
+        width: 75px; } }
+  .navigation .navigation__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 39px; }
+    @media screen and (max-width: $sm) {
+      .navigation .navigation__list {
+        grid-gap: 16px; } }
+    .navigation .navigation__list .navigation__list-item .navigation__list-item-link {
+      font-weight: 500;
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 18px;
+      display: block; }
+      @media screen and (max-width: $sm) {
+        .navigation .navigation__list .navigation__list-item .navigation__list-item-link {
+          display: none; } }
+      .navigation .navigation__list .navigation__list-item .navigation__list-item-link:hover {
+        text-decoration: underline; }
+      .navigation .navigation__list .navigation__list-item .navigation__list-item-link .navigation__list-item-mobile-link {
+        display: none; }
+        @media screen and (max-width: $sm) {
+          .navigation .navigation__list .navigation__list-item .navigation__list-item-link .navigation__list-item-mobile-link {
+            display: block; } }
+
+.phone-button, .mail-button {
+  padding: 9px;
+  border-radius: 7px;
+  color: #219CBA;
+  border: 1px solid #219CBA;
+  transition: box-shadow 300ms, transform 100ms; }
+  .phone-button:active, .mail-button:active {
+    transform: scale(0.95); }
+
+.phone-button {
+  background-color: #219CBA; }
+  .phone-button:hover {
+    box-shadow: 0 0 10px 0 #219CBA; }
+
+/*Конец стилей для навигации*/
+
+/*# sourceMappingURL=navigation.css.map */
